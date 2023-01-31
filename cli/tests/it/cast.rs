@@ -336,3 +336,6 @@ casttest!(cast_receipt_revert_reason, |_: TestProject, mut cmd: TestCommand| {
     assert!(output.contains("revertReason"));
     assert!(output.contains("Transaction too old"));
 });
+
+// tests that cast bind doesn't stdout empty output
+casttest!(can_bind, _)
